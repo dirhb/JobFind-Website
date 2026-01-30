@@ -1,0 +1,56 @@
+
+
+.page-header {
+    padding: 18px 24px;
+    text-align: center;
+}
+
+.jobs-card h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+.jobs-box {
+    height: 60vh;  
+    max-height: 70vh; 
+    overflow-y: auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+
+.employers-card .employers-list {
+    max-height: 360px;
+    overflow-y: auto;
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+
+.genres-card .genres-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 18px 0 40px;
+}
+.pagination button {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+}
+.pagination .ellipsis {
+    align-self: center;
+}

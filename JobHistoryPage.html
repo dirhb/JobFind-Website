@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Job History - JobFind</title>
+    <link rel="stylesheet" href="StyleSheet.css"/>
+    <link rel="stylesheet" href="JobHistory.css"/>
+</head>
+<body>
+    <nav>
+        <ul class="Navigation">
+            <li>
+                <a href="Homepage.html"><img class="JobFindLogo" src="JobFind_Logo.png" alt="JobFind logo" /></a>
+            </li>
+            <li>Job History</li>
+            <li>Online Resume</li>
+            <li>Chat</li>
+            <li>Register</li>
+            <li class="searchBar">
+                <span class="search-icon material-symbols-outlined">search</span>
+                <input class="search-input" type="search" placeholder="Search" />
+            </li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Job History</h1>
+    </header>
+
+    <main class="container" role="main">
+        <section class="left-col" aria-label="Job history list">
+            <div class="card jobs-card">
+                <h3>Past Jobs</h3>
+
+                <div class="jobs-box" id="jobsList" role="list">
+                    <div class="job-row" role="listitem">
+                        <strong>Job Name:</strong> Warehouse Associate<br/>
+                        <strong>Last day at the job:</strong> 04/15/2023
+                    </div>
+
+                    <div class="job-row" role="listitem">
+                        <strong>Job Name:</strong> Customer Support Representative<br/>
+                        <strong>Last day at the job:</strong> 11/30/2021
+                    </div>
+
+                    <div class="job-row" role="listitem">
+                        <strong>Job Name:</strong> Sales Assistant<br/>
+                        <strong>Last day at the job:</strong> 07/01/2020
+                    </div>
+
+                    <div class="job-row" role="listitem">
+                        <strong>Job Name:</strong> Barista<br/>
+                        <strong>Last day at the job:</strong> 02/20/2019
+                    </div>
+
+                    <div class="job-row" role="listitem">
+                        <strong>Job Name:</strong> Delivery Driver<br/>
+                        <strong>Last day at the job:</strong> 09/10/2018
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="right-col" aria-label="Filters and quick lists">
+            <div class="card employers-card">
+                <h3>Employers</h3>
+                <ul class="popular-list employers-list">
+                    <li><a href="#" tabindex="0">Acme Logistics</a></li>
+                    <li><a href="#" tabindex="0">Sunrise Retail</a></li>
+                    <li><a href="#" tabindex="0">BlueWave Services</a></li>
+                    <li><a href="#" tabindex="0">Metro Foods</a></li>
+                    <li><a href="#" tabindex="0">Greenfield Tech</a></li>
+                    <li><a href="#" tabindex="0">Riverside Café</a></li>
+                </ul>
+            </div>
+
+            <div class="card genres-card">
+                <h3>Genres</h3>
+                <form class="genres-form" aria-label="Filter by genres">
+                    <div class="genres-list">
+                        <label><input type="checkbox" name="genre" value="retail"> Retail</label>
+                        <label><input type="checkbox" name="genre" value="hospitality"> Hospitality</label>
+                        <label><input type="checkbox" name="genre" value="logistics"> Logistics</label>
+                        <label><input type="checkbox" name="genre" value="tech"> Technology</label>
+                        <label><input type="checkbox" name="genre" value="customer-service"> Customer Service</label>
+                        <label><input type="checkbox" name="genre" value="food"> Food Service</label>
+                    </div>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <div class="pagination" aria-label="Pagination">
+        <button type="button">Page 1</button>
+        <button type="button">Page 2</button>
+        <button type="button">Page 3</button>
+        <button type="button">Page 4</button>
+        <button type="button">Page 5</button>
+        <span class="ellipsis">…</span>
+    </div>
+</body>
+</html>
