@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register - JobFind</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="Register.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body class="register-page">
+
+    <!-- Minimal nav — no search bar / notifications on auth page -->
+    <nav>
+        <ul class="Navigation">
+            <li class="logo-item">
+                <a href="Homepage.html"><img class="JobFindLogo" src="JobFind_Logo.png" alt="JobFind logo" /></a>
+            </li>
+            <li><a href="JobHistoryPage.html">Job History</a></li>
+            <li><a href="OnlineResume.html">Online Resume</a></li>
+            <li><a href="Chat.html">Chat</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li class="searchBar">
+                <span class="search-icon material-symbols-outlined" aria-hidden="true">search</span>
+                <input class="search-input" type="search" placeholder="Search jobs, companies, or skills" aria-label="Search jobs" />
+            </li>
+            <li class="notification">
+                <button class="notification-icon material-symbols-outlined" aria-label="Notifications">notifications</button>
+                <ul class="dropdown">
+                    <li>3 unread messages</li>
+                    <li>2 interview reminders</li>
+                    <li>1 new saved job match</li>
+                </ul>
+            </li>
+            <li class="account">
+                <button class="account-icon material-symbols-outlined" aria-label="Account menu">account_circle</button>
+                <ul class="dropdown">
+                    <li>Profile</li>
+                    <li>Settings</li>
+                    <li>Logout</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Split layout -->
+    <main class="auth-wrapper">
+
+        <!-- Left panel — branding -->
+        <div class="auth-panel-left">
+            <div class="auth-brand">
+                <div class="auth-logo-wrap">
+                    <img src="JobFind_Logo.png" alt="JobFind logo" class="auth-logo" />
+                </div>
+                <h1>Find your next opportunity.</h1>
+                <p>JobFind connects thousands of job seekers with top employers every day. Build your profile, upload your resume, and apply to roles that match your skills — all in one place.</p>
+
+                <ul class="auth-perks">
+                    <li>
+                        <span class="material-symbols-outlined">search</span>
+                        <span>Search thousands of live job listings</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">description</span>
+                        <span>Build a professional online resume</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">notifications_active</span>
+                        <span>Get instant alerts for matching roles</span>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">chat</span>
+                        <span>Message recruiters directly</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right panel — form -->
+        <div class="auth-panel-right">
+            <div class="auth-card">
+
+                <!-- Tab switcher -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="register">Register</button>
+                    <button class="auth-tab" data-tab="signin">Sign In</button>
+                </div>
+
+                <!-- Register form -->
+                <form class="auth-form" id="register-form">
+                    <h2>Create your account</h2>
+                    <p class="auth-subtitle">Join JobFind and start applying today.</p>
+
+                    <div class="auth-field">
+                        <label for="reg-name">Full Name</label>
+                        <div class="auth-input-wrap">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="text" id="reg-name" placeholder="Enter your full name" autocomplete="name" />
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="reg-email">Email</label>
+                        <div class="auth-input-wrap">
+                            <span class="material-symbols-outlined">mail</span>
+                            <input type="email" id="reg-email" placeholder="Enter your email" autocomplete="email" />
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="reg-password">Password</label>
+                        <div class="auth-input-wrap">
+                            <span class="material-symbols-outlined">lock</span>
+                            <input type="password" id="reg-password" placeholder="Create a password" autocomplete="new-password" />
+                            <button type="button" class="toggle-pw" aria-label="Toggle password visibility">
+                                <span class="material-symbols-outlined">visibility</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <label class="auth-checkbox">
+                        <input type="checkbox" id="reg-terms" />
+                        <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+
+                    <button type="submit" class="auth-submit">Create Account</button>
+                </form>
+
+                <!-- Sign In form -->
+                <form class="auth-form hidden" id="signin-form">
+                    <h2>Welcome back</h2>
+                    <p class="auth-subtitle">Sign in to your JobFind account.</p>
+
+                    <div class="auth-field">
+                        <label for="si-email">Email</label>
+                        <div class="auth-input-wrap">
+                            <span class="material-symbols-outlined">mail</span>
+                            <input type="email" id="si-email" placeholder="Enter your email" autocomplete="email" />
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label for="si-password">Password</label>
+                        <div class="auth-input-wrap">
+                            <span class="material-symbols-outlined">lock</span>
+                            <input type="password" id="si-password" placeholder="Enter your password" autocomplete="current-password" />
+                            <button type="button" class="toggle-pw" aria-label="Toggle password visibility">
+                                <span class="material-symbols-outlined">visibility</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <a href="#" class="forgot-pw">Forgot your password?</a>
+
+                    <button type="submit" class="auth-submit">Sign In</button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>

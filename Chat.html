@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat - JobFind</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="Chat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body class="chat-page">
+    <nav>
+        <ul class="Navigation">
+            <li class="logo-item">
+                <a href="Homepage.html"><img class="JobFindLogo" src="JobFind_Logo.png" alt="JobFind logo" /></a>
+            </li>
+            <li><a href="JobHistoryPage.html">Job History</a></li>
+            <li><a href="OnlineResume.html">Online Resume</a></li>
+            <li><a href="Chat.html">Chat</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li class="searchBar">
+                <span class="search-icon material-symbols-outlined" aria-hidden="true">search</span>
+                <input class="search-input" type="search" placeholder="Search jobs, companies, or skills" aria-label="Search jobs" />
+            </li>
+            <li class="notification">
+                <button class="notification-icon material-symbols-outlined" aria-label="Notifications">notifications</button>
+                <ul class="dropdown">
+                    <li>3 unread messages</li>
+                    <li>2 interview reminders</li>
+                    <li>1 new saved job match</li>
+                </ul>
+            </li>
+            <li class="account">
+                <button class="account-icon material-symbols-outlined" aria-label="Account menu">account_circle</button>
+                <ul class="dropdown">
+                    <li>Profile</li>
+                    <li>Settings</li>
+                    <li>Logout</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="page-header content-page-header">
+        <h1>Chat</h1>
+        <p>Message recruiters and follow up quickly.</p>
+    </header>
+
+    <main class="container content-page">
+        <section class="left-col">
+            <div class="card">
+                <h3>Recent Conversations</h3>
+                <ul class="popular-list">
+                    <li>BlueWave Services Recruiter</li>
+                    <li>Acme Logistics Hiring Team</li>
+                    <li>Greenfield Tech Interview Coordinator</li>
+                </ul>
+            </div>
+        </section>
+        <aside class="right-col">
+            <div class="card">
+                <h3>Tips</h3>
+                <ul class="popular-list">
+                    <li>Keep your replies short and clear.</li>
+                    <li>Ask about next interview steps.</li>
+                    <li>Thank recruiters after interviews.</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

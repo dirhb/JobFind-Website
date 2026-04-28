@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Resume - JobFind</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="OnlineResume.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body class="resume-page">
+    <nav>
+        <ul class="Navigation">
+            <li class="logo-item">
+                <a href="Homepage.html"><img class="JobFindLogo" src="JobFind_Logo.png" alt="JobFind logo" /></a>
+            </li>
+            <li><a href="JobHistoryPage.html">Job History</a></li>
+            <li><a href="OnlineResume.html">Online Resume</a></li>
+            <li><a href="Chat.html">Chat</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li class="searchBar">
+                <span class="search-icon material-symbols-outlined" aria-hidden="true">search</span>
+                <input class="search-input" type="search" placeholder="Search jobs, companies, or skills" aria-label="Search jobs" />
+            </li>
+            <li class="notification">
+                <button class="notification-icon material-symbols-outlined" aria-label="Notifications">notifications</button>
+                <ul class="dropdown">
+                    <li>3 unread messages</li>
+                    <li>2 interview reminders</li>
+                    <li>1 new saved job match</li>
+                </ul>
+            </li>
+            <li class="account">
+                <button class="account-icon material-symbols-outlined" aria-label="Account menu">account_circle</button>
+                <ul class="dropdown">
+                    <li>Profile</li>
+                    <li>Settings</li>
+                    <li>Logout</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="page-header content-page-header">
+        <h1>Online Resume</h1>
+        <p>Build and update a clear resume that highlights your strengths.</p>
+    </header>
+
+    <main class="container content-page">
+        <section class="left-col">
+            <div class="card">
+                <h3>Resume Sections</h3>
+
+                <div class="accordion">
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="acc-num">1</span>
+                            <span class="acc-title">Contact Information</span>
+                            <span class="acc-icon material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="accordion-body" hidden>
+                            <div class="acc-fields">
+                                <label>Full Name<input type="text" placeholder="e.g. Jane Smith" /></label>
+                                <label>Email<input type="email" placeholder="e.g. jane@email.com" /></label>
+                                <label>Phone<input type="tel" placeholder="e.g. +44 7700 900000" /></label>
+                                <label>Location<input type="text" placeholder="e.g. London, UK" /></label>
+                                <label>LinkedIn / Website<input type="url" placeholder="https://" /></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="acc-num">2</span>
+                            <span class="acc-title">Professional Summary</span>
+                            <span class="acc-icon material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="accordion-body" hidden>
+                            <div class="acc-fields">
+                                <label>
+                                    Summary
+                                    <textarea rows="5" placeholder="Write 2–4 sentences about your experience, key skills, and what you're looking for..."></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="acc-num">3</span>
+                            <span class="acc-title">Work Experience</span>
+                            <span class="acc-icon material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="accordion-body" hidden>
+                            <div class="acc-fields">
+                                <label>Job Title<input type="text" placeholder="e.g. Frontend Developer" /></label>
+                                <label>Company<input type="text" placeholder="e.g. Acme Corp" /></label>
+                                <div class="field-row">
+                                    <label>Start Date<input type="month" /></label>
+                                    <label>End Date<input type="month" /></label>
+                                </div>
+                                <label>
+                                    Description
+                                    <textarea rows="4" placeholder="Describe your responsibilities and achievements..."></textarea>
+                                </label>
+                            </div>
+                            <button class="add-more-btn">+ Add another role</button>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="acc-num">4</span>
+                            <span class="acc-title">Education</span>
+                            <span class="acc-icon material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="accordion-body" hidden>
+                            <div class="acc-fields">
+                                <label>Degree / Qualification<input type="text" placeholder="e.g. BSc Computer Science" /></label>
+                                <label>Institution<input type="text" placeholder="e.g. University of Manchester" /></label>
+                                <div class="field-row">
+                                    <label>Start Year<input type="number" placeholder="2018" min="1950" max="2030" /></label>
+                                    <label>End Year<input type="number" placeholder="2021" min="1950" max="2030" /></label>
+                                </div>
+                                <label>
+                                    Notes
+                                    <textarea rows="3" placeholder="Relevant modules, grade, awards..."></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="acc-num">5</span>
+                            <span class="acc-title">Skills</span>
+                            <span class="acc-icon material-symbols-outlined">expand_more</span>
+                        </button>
+                        <div class="accordion-body" hidden>
+                            <div class="acc-fields">
+                                <label>
+                                    Technical Skills
+                                    <textarea rows="3" placeholder="e.g. JavaScript, React, SQL, Figma..."></textarea>
+                                </label>
+                                <label>
+                                    Soft Skills
+                                    <textarea rows="3" placeholder="e.g. Communication, Team leadership, Problem-solving..."></textarea>
+                                </label>
+                                <label>
+                                    Languages
+                                    <input type="text" placeholder="e.g. English (Native), Spanish (B2)" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /.accordion -->
+            </div>
+        </section>
+
+        <aside class="right-col">
+            <div class="card">
+                <h3>Quick Actions</h3>
+                <ul class="popular-list">
+                    <li>Upload Existing Resume</li>
+                    <li>Generate PDF</li>
+                    <li>Share Resume Link</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
