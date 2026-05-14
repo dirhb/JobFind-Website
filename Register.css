@@ -1,8 +1,4 @@
-﻿/* ============================================================
-   Register.css — styles only for Register.html
-   ============================================================ */
-
-/* ── Full-page split layout ──────────────────────────────── */
+﻿/* ── Full-page split layout ──────────────────────────────── */
 .auth-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
